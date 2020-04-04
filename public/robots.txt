@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://mustafa-alfar.netlify.com/sitemap.xml
