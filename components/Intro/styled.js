@@ -7,7 +7,7 @@ export const Container = styled.main`
   align-items: flex-start;
   justify-content: center;
   height: 65vh;
-  min-height: 400px;
+  min-height: 520px;
   background-color: #d8ece8;
   background-image: url(https://assets-global.website-files.com/5d3e265ac89f6a3e64292efc/5d48057e3a861da4768ce8af_color3.jpg)
   background-position: 0 0;

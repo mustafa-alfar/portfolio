@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row-reverse;
   position: fixed;
-  top: 0;
+  top: 67px;
   bottom: 0;
   width: 100%;
   height: 100%;
@@ -22,22 +22,21 @@ export const Menu = styled.ul`
   flex-direction: column;
   background-color: white;
   margin-top: 0;
-  padding-top: 7em;
+  padding: 0;
 
   li {
     cursor: pointer;
-
     a {
+      padding: 1em;
+      padding-right: 0;
       width: 100%;
       display: inline-block;
       transition: 0.2s border ease-in;
       border-bottom: 2px solid transparent;
       &:hover {
-        border-bottom: 2px solid #333;
+        background-color: #4353ff;
+        color: white;
       }
     }
-  }
-  li + li {
-    margin-top: 1em;
   }
 `;

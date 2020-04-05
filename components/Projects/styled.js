@@ -6,7 +6,7 @@ import {
   Events,
   animateScroll as scroll,
   scrollSpy,
-  scroller
+  scroller,
 } from 'react-scroll';
 
 export const Container = styled(Element)`
@@ -66,7 +66,7 @@ export const Container = styled(Element)`
   ${mediaQuery[1]} {
     text-align: center;
     li {
-      margin: 0 64px;
+      margin: 0 32px;
     }
     a {
       display: inline-block !important;

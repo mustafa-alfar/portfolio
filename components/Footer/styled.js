@@ -9,6 +9,10 @@ export const Container = styled.footer`
   align-itesm: center;
   margin-top: 10em;
   padding: 0 64px;
+
+  ${mediaQuery[1]} {
+    padding: 0 32px;
+  }
 `;
 
 export const Layout = styled.nav`

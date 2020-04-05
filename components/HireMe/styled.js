@@ -11,7 +11,7 @@ export const Container = styled.section`
 
   ${mediaQuery[1]} {
     form {
-      margin: 0 64px;
+      margin: 0 32px;
     }
   }
 
