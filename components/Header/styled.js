@@ -10,6 +10,7 @@ export const Container = styled.header`
   background-color: white;
   margin: 0 auto;
   transition: 0.2s transform ease-in;
+  padding: 0 0 0 16px;
 
   ${({ isFixed }) =>
     isFixed &&
@@ -47,6 +48,7 @@ export const Container = styled.header`
   }
 
   ${mediaQuery[1]} {
+    padding: 1em 32px;
     nav.desktop {
       display: none;
     }
