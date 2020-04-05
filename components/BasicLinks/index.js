@@ -6,11 +6,12 @@ const Index = () => {
     <>
       <li>
         <Link
+          className="basic-link"
           activeClass="active"
           to="projects"
           spy={true}
           smooth={true}
-          offset={-100}
+          offset={-150}
           duration={500}
         >
           Projects
@@ -18,6 +19,7 @@ const Index = () => {
       </li>
       <li>
         <Link
+          className="basic-link"
           activeClass="active"
           to="about"
           spy={true}
@@ -30,6 +32,7 @@ const Index = () => {
       </li>
       <li>
         <Link
+          className="basic-link"
           activeClass="active"
           to="contact"
           spy={true}

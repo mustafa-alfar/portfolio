@@ -5,7 +5,6 @@ import { css } from '@emotion/core';
 
 export const Container = styled.header`
   ${flex};
-  padding: 1em 15px;
   color: rgb(33, 33, 33);
   z-index: 21;
   background-color: white;
@@ -26,25 +25,24 @@ export const Container = styled.header`
 
   nav.desktop {
     ${flex}
-    li + li {
-      margin-left: 1em;
-    }
   }
 
   div.mobile {
     display: none;
   }
 
-  a {
+  a.basic-link {
+    display: inline-block;
     color: inherit;
     cursor: pointer;
     outline: none;
-    padding: 0.5em 0;
+    padding: 1.5em 1em;
     transition: 0.2s border ease-in;
-    border-bottom: 2px solid transparent;
+    margin: 0;
 
     &:hover {
-      border-bottom: 2px solid #333;
+      background-color: #4353ff;
+      color: white;
     }
   }
 

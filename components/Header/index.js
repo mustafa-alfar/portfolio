@@ -13,11 +13,9 @@ const Index = React.forwardRef(
         isFixed={isFixed}
         ref={ref}
       >
-        <h1>
-          <Link href="/">
-            <a>Mustafa Alfar</a>
-          </Link>
-        </h1>
+        <Link href="/">
+          <a>Mustafa Alfar</a>
+        </Link>
         <nav className="desktop">
           <BasicLinks />
         </nav>
