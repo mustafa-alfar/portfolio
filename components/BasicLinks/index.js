@@ -34,10 +34,10 @@ const Index = () => {
           to="contact"
           spy={true}
           smooth={true}
-          offset={-200}
+          offset={-180}
           duration={500}
         >
-          Contact
+          Contact Me
         </Link>
       </li>
     </>

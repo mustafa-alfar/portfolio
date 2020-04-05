@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 import { Container } from './styled';
 
@@ -11,9 +12,17 @@ const Index = () => {
         especially React and its ecosystem, have been tried to deliver a a
         high-quality product which is capable of achieving the business's goals.
       </h2>
-      <a className="call-for-action" href="#contact">
-        Contact me
-      </a>
+      <Link
+        className="call-for-action"
+        activeClass="active"
+        to="contact"
+        spy={true}
+        smooth={true}
+        offset={-200}
+        duration={500}
+      >
+        Contact Me
+      </Link>
     </Container>
   );
 };
