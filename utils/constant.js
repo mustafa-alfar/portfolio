@@ -1,6 +1,11 @@
 export const projects = [
   {
-    name: "Bonat's Dashboard",
+    name: "Bonat's Ecommerce Dashboard",
+    description: 'Intergrate E-Commerce platform to Bonat loyalty system',
+    link: 'http://ecom-dev.bonat.io/',
+  },
+  {
+    name: "Bonat's Physical Dashboard",
     description: 'Merchant dashboard to communicate and monitor their clients',
     link: 'http://dashboard.bonat.io/',
   },

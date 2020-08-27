@@ -27,10 +27,15 @@ export const InputContainer = styled.div`
 
   label {
     position: absolute;
-    transform: translateY(80%);
+    transform: translateY(-50%);
     left: 2%;
+    top: 50%;
     transition: transform 0.1s ease-in;
     color: #666;
+  }
+
+  label.text-area {
+    top: 10%;
   }
 
   ${({ hasValue }) =>
@@ -63,7 +68,7 @@ export const Input = styled.input`
   }
 
   &:focus ~ label {
-    transform: translateY(-50%);
+    transform: translateY(-150%);
     background-color: #fff;
     z-index: 2;
   }
@@ -90,6 +95,7 @@ export const TextArea = styled.textarea`
   }
 
   &:focus ~ label {
+    top: 0 !important;
     transform: translateY(-50%);
     background-color: #fff;
     z-index: 2;

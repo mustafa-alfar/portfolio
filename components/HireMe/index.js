@@ -24,7 +24,7 @@ const Index = () => {
       .required('Email field is required'),
     message: Yup.string('Must be a string')
       .min(9, 'must be more than 9 characters')
-      .required('Message field is required')
+      .required('Message field is required'),
   });
   return (
     <Container className="max-width" id="contact">
@@ -38,20 +38,20 @@ const Index = () => {
           setSubmitting(true);
           emailjs
             .send('gmail', templateId, state, userID)
-            .then(res => {
+            .then((res) => {
               setMessage(
                 'Thank you, I am going to contact you back as soon as possible'
               );
               resetForm();
               setSubmitting(false);
             })
-            .catch(err => {
+            .catch((err) => {
               setSubmitting(false);
             });
         }}
       >
         {({ values, errors, isSubmitting, touched }) => {
-          const isError = key => errors[key] && touched[key];
+          const isError = (key) => errors[key] && touched[key];
           return (
             <Form>
               {message && <Alert>{message}</Alert>}
@@ -87,7 +87,9 @@ const Index = () => {
                   hasError={isError('message')}
                   rows="10"
                 />
-                <label htmlFor="message">Message*</label>
+                <label htmlFor="message" className="text-area">
+                  Message*
+                </label>
               </InputContainer>
               <ErrorMessage className="error" name="message" component="div" />
 

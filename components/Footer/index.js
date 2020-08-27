@@ -3,6 +3,31 @@ import Link from 'next/link';
 
 import { Container, Layout } from './styled';
 
+const contactList = [
+  {
+    href: 'https://github.com/mustafa-alfar',
+    name: 'Github',
+    icon: '/github.svg',
+  },
+  {
+    href: 'https://stackoverflow.com/users/10185088/mustafa-alfar',
+    name: 'StackOverflow',
+    icon: '/stack-overflow.svg',
+  },
+
+  {
+    href: 'https://www.linkedin.com/in/mustafa-alfar-503a3b1a0/',
+    name: 'LinkedIn',
+    icon: '/linkedin.svg',
+  },
+
+  {
+    href: 'https://twitter.com/mustafa_alfar',
+    name: 'Twitter',
+    icon: '/twitter.svg',
+  },
+];
+
 const Index = () => {
   return (
     <Container>
@@ -19,33 +44,13 @@ const Index = () => {
           </p>
         </div>
         <ul>
-          <li>
-            <a
-              href="https://github.com/mustafa-alfar"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="/github.svg" alt="" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://stackoverflow.com/users/10185088/mustafa-alfar"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="/stack-overflow.svg" alt="" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://twitter.com/mustafa_alfar"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="/twitter.svg" alt="" />
-            </a>
-          </li>
+          {contactList.map((social) => (
+            <li key={social.name}>
+              <a href={social.href} target="_blank" rel="noopener">
+                <img src={social.icon} alt={social.name} />
+              </a>
+            </li>
+          ))}
         </ul>
       </Layout>
     </Container>
