@@ -10,21 +10,20 @@ const Index = () => {
       <ul>
         {projects.map((project, idx) => (
           <li key={idx}>
-            <h2>
-              {project.link ? (
-                <a href={project.link} target="_blank" rel="noopener">
-                  {project.name}
+            <a href={project.link} target="_blank" rel="noopener">
+              <h2>{project.name}</h2>
+              <p>{project.description}</p>
+              {project.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener"
+                  className="github"
+                >
+                  <img src="/github.svg" alt="" />
                 </a>
-              ) : (
-                project.name
               )}
-            </h2>
-            <p>{project.description}</p>
-            {project.github && (
-              <a href={project.github} target="_blank" rel="noopener">
-                <img src="/github.svg" alt="" />
-              </a>
-            )}
+            </a>
           </li>
         ))}
       </ul>

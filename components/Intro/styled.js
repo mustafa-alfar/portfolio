@@ -14,7 +14,7 @@ export const Container = styled.main`
   background-size: cover;
 
   h1 {
-    font-size: 3.6rem;
+    font-size: 6rem;
     color: #333;
   }
 

@@ -40,7 +40,7 @@ const Index = () => {
           offset={-180}
           duration={500}
         >
-          Contact Me
+          Contact Mustafa
         </Link>
       </li>
     </>

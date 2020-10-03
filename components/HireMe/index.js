@@ -98,7 +98,7 @@ const Index = () => {
                 disabled={isSubmitting}
                 className="call-for-action"
               >
-                {isSubmitting ? 'Submitting' : 'Submit'}
+                {isSubmitting ? 'Submitting' : 'Contact Mustafa'}
               </button>
             </Form>
           );

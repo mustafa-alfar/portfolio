@@ -1,13 +1,6 @@
 import styled from '@emotion/styled';
 import { mediaQuery } from '../../utils';
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from 'react-scroll';
+import { Element } from 'react-scroll';
 
 export const Container = styled(Element)`
   padding: 0;
@@ -25,22 +18,17 @@ export const Container = styled(Element)`
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 2em 32px;
       box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 6px 0px;
       background-color: #fff;
 
       &:hover {
         box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 6px 0px;
       }
-      // &:nth-child(1n) {
-      //   background-image: url(https://assets-global.website-files.com/5d3e265ac89f6a3e64292efc/5d48ada4d6bb3ed7f8a2b7d8_color-b1.jpg);
-      // }
-      // &:nth-child(2n) {
-      //   background-image: url(https://assets-global.website-files.com/5d3e265ac89f6a3e64292efc/5d48ada48f3da11f69aaa3cc_color-b2.jpg);
-      // }
-      // &:nth-child(3n) {
-      //   background-image: url(https://assets-global.website-files.com/5d3e265ac89f6a3e64292efc/5d48ada5d6bb3e07bfa2b7d9_color-b3.jpg);
-      // }
+
+      > a {
+        display: block !important;
+        padding: 2em 32px !important;
+      }
       > * {
         margin: 0 0 10px 0;
       }
@@ -54,6 +42,14 @@ export const Container = styled(Element)`
       a {
         display: contents;
         margin-bottom: 0;
+      }
+
+      .github {
+        img {
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
       }
 
       img {
